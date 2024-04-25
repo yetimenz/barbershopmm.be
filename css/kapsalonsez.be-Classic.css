@@ -1,0 +1,47 @@
+body[data-theme="Classic"]  {
+    --color-background-first: #ffffff ;
+    --color-background-second: #f7f7f7;
+    --color-primary: #ffffff;
+    --color-secondary: rgba(27, 27, 27, 0.75);
+    --color-feedback-title: #859391;
+    --color-feedback-paragraph: #050505;
+    --color-feedback-paragraph-fallback: #050505;
+    --color-black-font: #000000;
+    --color-white-font: #ffffff;
+    --color-success: #69d321;
+    --color-warning: #fbb03b;
+    --color-error: #d24444;
+    --color-info: #0090ff;
+    --color-info-hover: #70befa;
+    --color-destructive: #d24444;
+    --color-danger: #d24444;
+    --color-link: #0090ff ;
+
+
+    /*Custom*/
+
+    /* Navigation */
+    --navigation-link-text-transform: none;
+
+    /*Pricing*/
+    --pricing-container-max-width: 750px;
+    --pricing-container-padding: 0;
+    --pricing-container-button-margin-left: 24px;
+    --pricing-header-text-align: left;
+    --pricing-header-border-bottom: none;
+    --pricing-header-margin-left: 0;
+    --pricing-price-container-left: 2.5em;
+    --pricing-button-container-left: 3em;
+
+
+
+    /* Form */
+    --form-input-wrapper-direct: block;
+    --form-input-container-padding-bottom: 16px;
+    --form-input-border-bottom: none;
+
+    /* Contact */
+    --contact-header-border-bottom: none;
+
+}
+

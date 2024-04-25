@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>BarbershopM&M</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="kapsalonsez - Home">
+    <meta name="keywords" content="kapsalonsez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://use.typekit.net/qmz0rau.css">
+        <link rel="stylesheet" href="css/kapsalonsez.be-style.css">
+        <link rel="stylesheet" href="css/kapsalonsez.be-Classic.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&amp;family=Quicksand:wght@300&amp;display=swap" rel="stylesheet">
+        <script src="js/df175a100d.js" crossorigin="anonymous"></script>
+        <script src="js/recaptcha-enterprise.js" async defer></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+            <!-- website id: 23ba7407-0ea5-478c-80fe-a9137517e1be -->
+    <!-- website slug: kapsalon-sez -->
+    <!-- website domain: kapsalonsez.be -->
+    <!-- website organisation: 67ff15d1-1ff3-4128-91f1-c4e0e4d7dcc9 -->
+    <!-- website locales: nl -->
+    <!-- website default locale: nl -->
+    <!-- page id: ef74c37d-2f70-42b0-b075-a1157fae968b -->
+    <!-- page slug: home -->
+    <!-- page order: 0 -->
+    <!-- page language: nl -->
+</head>
+<body data-theme="Classic">
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+
+
+                    
+                                
+                
+            
+<div class="main">
+            
+        <section class="banner" <img alt="Kapsalon Sez" src="images/bckgd.jpg">
+                                                                                                    <div class="logo">
+                            <img alt="Kapsalon Sez" src="images/sts.png">
+                                </div>
+        <div>
+            <header>
+                                    <h2><em>Boek nu</em> online</h2>
+
+                    
+                    <a href="https://booking.optios.net/20129" class="button book-online" target="_blank">
+                        Boeken
+                    </a>
+                            </header>
+        </div>
+    </section>
+
+                     
+
+
+    <div class="navigation">
+        <div class="navigation-inner">
+                <div id="menuToggle">
+                <input class="checkbox" type="checkbox">
+                <span class="firstLine"></span>
+                <span class="secondLine"></span>
+                <span class="thirdLine"></span>
+                <ul id="menu" class="navigation-list">
+                                            <li class="active">
+                            <a href="home.html">
+                                Home
+                            </a>
+                        </li>
+                                    </ul>
+                </div>
+            <div>
+                                        </div>
+        </div>
+    </div>
+           
+            <section class="text-and-images">
+    <div class="text-and-images-inner">
+                    <section class="text-and-image">
+    <i class="fa-solid fa-star" style="background-color: #fcff2ed2"></i>
+    <h3>Kwaliteit</h3>
+    <p>Bovendien hechten we veel waarde aan hygiëne en veiligheid. Al onze gereedschappen worden zorgvuldig gereinigd en gedesinfecteerd, en we volgen strikte protocollen om ervoor te zorgen dat elke klant een veilige en comfortabele ervaring heeft.</p>
+</section>                    <section class="text-and-image">
+    <i class="fa-solid fa-thumbs-up" style="background-color: #fbff22"></i>
+    <h3>Klantvriendelijkheid</h3>
+    <p>Maar het gaat verder dan alleen vakmanschap. Bij ons draait het om de totale beleving. Je wordt ontvangen met een warm welkom en een oprechte glimlach. Terwijl je in de comfortabele stoel zit, wordt er goed geluisterd naar jouw wensen en voorkeuren. Onze barbers begrijpen dat elke klant uniek is, en ze streven ernaar om een persoonlijke en op maat gemaakte service te bieden die precies past bij jouw stijl en persoonlijkheid.
+
+    </p>
+</section>                    <section class="text-and-image">
+    <i class="fa-solid fa-user" style="background-color: #efff0ed3"></i>
+    <h3>Persoonlijke service</h3>
+    <p>Onze barbers stralen een ongeëvenaarde passie uit voor hun vak. Ze zijn meesters in hun ambacht, met jarenlange ervaring en een onfeilbaar oog voor detail. Hun technische vaardigheden zijn van wereldklasse, of je nu komt voor een klassieke scheerbeurt of de nieuwste trendy kapsel.</p>
+</section>            </div>
+</section>
+    
+                                <div class="js-establishment-id" data-establishment-id="20129"></div>
+<div class="slider carousel-wrapper">
+    <h1 class="carousel-main-header"> What do our customers think? </h1>
+    <div class="carousel-container">
+        <div class="loader">
+     
+        </div>
+    </div>
+    <script>
+            const optiosId = 20129;
+            const clientUrl = `https://client.optios.net`;
+
+            window.addEventListener ?
+                window.addEventListener("load",getFeedback,false) :
+                window.attachEvent && window.attachEvent("onload",getFeedback);
+
+
+            function getFeedback ()  {
+                const request = new XMLHttpRequest()
+                request.open('GET',`${clientUrl}feedback/${optiosId}`)
+                request.send();
+                request.onload = function () {
+                    if (request.status === 200) {
+                        const feedbacks = JSON.parse(request.response)
+
+                        const interval = 10000
+                        const animDuration = 600;
+                        const container = Array.from(document.getElementsByClassName('carousel-container'))
+                        const dots = document.createElement('div')
+                        dots.className = 'dots'
+
+
+                        let currSlide = 0;
+                        let prevSlide = container.length - 1;
+                        let intrvl;
+                        let timeout;
+
+
+                        for (let i = 0; i < feedbacks.length; i++) {
+                            const data = feedbacks[i];
+                            if(data) {
+                                const loader = document.getElementsByClassName('loader')
+                                loader[0].style.display = 'none'
+                            }
+                            const slider = document.createElement('div')
+                            slider.className = 'slider'
+
+                            const slide = document.createElement('div')
+                            slide.className = 'slide slide-old'
+                            slider.appendChild(slide)
+
+                            const header = document.createElement('h3')
+                            header.className = "slider-header"
+                            header.innerHTML = data.customer
+                            slide.appendChild(header)
+
+                            const date = document.createElement('p')
+                            date.className = "slider-sub"
+                            date.innerHTML = new Date(data.created_at).toLocaleDateString('en-us',{month: 'long', day: 'numeric', year: 'numeric'})
+                            slide.appendChild(date)
+
+                            const span = document.createElement('span')
+                            span.className = 'slider-paragraph'
+                            span.innerHTML = !data.text ? 'There is no description added' : data.text
+slide.appendChild(span)
+
+                            container[0].appendChild(slider)
+                        }
+
+                        const slideContainer = document.querySelectorAll('.slide')
+
+                        for (let i = 0; i < slideContainer.length; ++i) {
+                            const dot = document.createElement("div");
+                            dot.classList.add("dot");
+                            dots.appendChild(dot);
+                            dot.addEventListener("click", dotClick.bind(null, i), false);
+                            container[0].appendChild(dots)
+
+                        }
+
+                        const allDots = dots.querySelectorAll(".dot");
+                        allDots[0].classList.add("active-dot");
+
+                        slideContainer[0].style.left = "0";
+                        timeout = setTimeout(() => {
+                            animateSlider();
+                            slideContainer[0].style.left = "";
+                            intrvl = setInterval(animateSlider, interval);
+                        }, interval - animDuration);
+
+                        function animateSlider(nextImg, right) {
+                            if (!nextImg)
+                                nextImg = currSlide + 1 < slideContainer.length ? currSlide + 2 : 1;
+
+                            --nextImg;
+                            slideContainer[prevSlide].style.animationName = "";
+
+                            if (!right) {
+                                slideContainer[nextImg].style.animationName = "leftNext";
+                                slideContainer[currSlide].style.animationName = "leftCurr";
+                            } else {
+                                slideContainer[nextImg].style.animationName = "rightNext";
+                                slideContainer[currSlide].style.animationName = "rightCurr";
+                            }
+
+                            prevSlide = currSlide;
+                            currSlide = nextImg;
+
+                            currDot = allDots[currSlide];
+                            currDot.classList.add("active-dot");
+                            prevDot = allDots[prevSlide];
+                            prevDot.classList.remove("active-dot");
+                        }
+
+                        function dotClick(num) {
+                            if (num === currSlide)
+                                return false;
+
+                            clearTimeout(timeout);
+                            clearInterval(intrvl);
+
+                            if (num > currSlide){
+                                animateSlider(num + 1);
+                                slideContainer[0].style.left = "";
+                            }
+
+
+                            else {
+                                animateSlider(num + 1, true);
+                                slideContainer[0].style.left = "";
+                            }
+
+                            intrvl = setInterval(animateSlider, interval);
+                        }
+                    }
+
+                }
+            }
+
+    </script>
+</div>
+                
+            <section class="section-gallery">
+    <div class="section-gallery-images">
+                    <img src="images/files.optios.net-">
+                    <img src="images/files.optios.net-">
+                    <img src="images/files.optios.net-">
+            </div>
+    <button class="section-gallery-left"><i class="fa-solid fa-caret-left"></i></button>
+    <button class="section-gallery-right"><i class="fa-solid fa-caret-right"></i></button>
+</section>
+
+<script>
+    $(function () {
+        $(window).on('load', function () {
+            if ($('.section-gallery-images').width() < $('.section-gallery-images')[0].scrollWidth) {
+                $('.section-gallery .section-gallery-left, .section-gallery .section-gallery-right').show();
+            } else {
+                $('.section-gallery-images').css('justify-content', 'center');
+            }
+        });
+
+        $('.section-gallery .section-gallery-left').on('click', function () {
+            var $container = $('.section-gallery-images', $(this).parent());
+            var leftPosition = $container.scrollLeft();
+            $(this).parent()
+            $container.animate({scrollLeft: Math.max(0, leftPosition - 360)}, 300)
+        })
+
+        $('.section-gallery .section-gallery-right').on('click', function () {
+            var $container = $('.section-gallery-images', $(this).parent());
+            var leftPosition = $container.scrollLeft();
+            $container.animate({scrollLeft: leftPosition + 360}, 300)
+        })
+    })
+
+</script>    
+        
+            <section class="section-inline">
+    <div class="section-inline-inner">
+        <div class="section-wrapper">
+                            <section class="section-contact section-contact-half" style="word-wrap: break-word; text-align: left">
+    <h3 class="contact-header">Adres</h3>
+    <address class="contact-description">Dorp Oost 32A<br>
+9080 Lochristi</address>
+    <h3 class="contact-header">E-mail</h3>
+    <a class="contact-description" href="mailto:info@barbershopm.m.be">info@barbershopm.m.be</a>
+    <h3 class="contact-header">Telefoon</h3>
+    <a class="contact-description" href="tel0485642019:">0485642019</a>
+</section>                            <section class="section-html section-html-half" style="word-wrap: break-word; text-align: left">
+                Maandag gesloten<br>
+Dinsdag 10:00 - 20:00<br>
+Woensdag 10:00 - 20:00<br>
+Donderdag 10:00 - 20:00<br>
+Vrijdag 10:00 - 20:00<br>
+Zaterdag 10:00 - 20:00<br>
+Zondag gesloten <br>
+            </section>
+                            <section class="section-form section-form-half">
+    <form class="input-form">
+        <h3 class="input-form-title">Neem contact op</h3>
+        <div class="input-wrapper">
+            <div class="input-container">
+            <input class="input" type="text" placeholder="Naam" name="name" required>
+            </div>
+            <div class="input-container">
+                <input class="input" type="email" placeholder="E-mail" name="email" required>
+            </div>
+            </div>
+        <div class="input-wrapper input-message">
+            <textarea rows="3" placeholder="Bericht" name="message" required></textarea>
+        </div>
+        <button type="submit" class="button">Versturen</button>
+    </form>
+
+    <div class="spinner" style="display: none">
+        <div class="spinner-wrapper">
+            <div class="spinner-dot"></div>
+            <div class="spinner-border"></div>
+        </div>
+    </div>
+
+    <div class="form-success" style="display: none">
+        <i class="fa-icon icon-checkmark"></i>
+        <span>Uw bericht is verzonden.</span>
+    </div>
+</section>
+
+<script>
+    $(function() {
+        $('.section-form form').on('submit', function(e) {
+            e.preventDefault();
+
+            grecaptcha.enterprise.ready(async () => {
+                const captchaValue = await grecaptcha.enterprise.execute('6LeuFgcpAAAAAA8OXrh3fec8ix4XsBlR_KlBBgpy', {action: 'FORM'});
+
+                var name = $('[name=name]', this).val();
+                var email = $('[name=email]', this).val();
+                var message = $('[name=message]', this).val();
+
+                if (!name || !email || !message || !captchaValue) {
+                    return false;
+                }
+
+                $(this).css('visibility', 'hidden');
+                var section = $(this).parent();
+                $('.spinner', section).show();
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: 'https://website-api.optios.net/public/website/23ba7407-0ea5-478c-80fe-a9137517e1be/form',
+                    // The key needs to match your method's input parameter (case-sensitive).
+                    data: JSON.stringify({
+                        name: name,
+                        email: email,
+                        message: message,
+                        'g-recaptcha-response': captchaValue
+                    }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        $('.spinner', section).hide();
+                        $('.form-success', section).show();
+                    },
+                    error: function (errMsg) {
+                        $('.spinner', section).hide();
+                        $('form', section).css('visibility', 'visible');
+                    }
+                });
+            });
+
+            return false;
+        })
+
+    });
+</script>                </div>
+</div>
+</section>
+    
+            <section class="section-gallery">
+    <div class="section-gallery-images">
+            </div>
+    <button class="section-gallery-left"><i class="fa-solid fa-caret-left"></i></button>
+    <button class="section-gallery-right"><i class="fa-solid fa-caret-right"></i></button>
+</section>
+
+<script>
+    $(function () {
+        $(window).on('load', function () {
+            if ($('.section-gallery-images').width() < $('.section-gallery-images')[0].scrollWidth) {
+                $('.section-gallery .section-gallery-left, .section-gallery .section-gallery-right').show();
+            } else {
+                $('.section-gallery-images').css('justify-content', 'center');
+            }
+        });
+
+        $('.section-gallery .section-gallery-left').on('click', function () {
+            var $container = $('.section-gallery-images', $(this).parent());
+            var leftPosition = $container.scrollLeft();
+            $(this).parent()
+            $container.animate({scrollLeft: Math.max(0, leftPosition - 360)}, 300)
+        })
+
+        $('.section-gallery .section-gallery-right').on('click', function () {
+            var $container = $('.section-gallery-images', $(this).parent());
+            var leftPosition = $container.scrollLeft();
+            $container.animate({scrollLeft: leftPosition + 360}, 300)
+        })
+    })
+
+</script>    
+            <iframe frameborder="0" style="border:0; width: 100%; height: 12em; margin-bottom: 2em" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10022.51578455621!2d3.836391!3d51.096855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37f133d71f1ab%3A0x39272aed8afa1bc1!2sBarbershopM%26M!5e0!3m2!1snl!2sbe!4v1713449099262!5m2!1snl!2sbe" allowfullscreen=""></iframe>    
+                
+        
+        
+</div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '261201362513847',
+            autoLogAppEvents: true,
+            xfbml: false,
+            version: 'v12.0'
+        });
+        FB.XFBML.parse();
+        FB.CustomerChat.show(false);
+    };
+</script>
+<script async defer crossorigin="anonymous" src="js/en_US-sdk.js"></script>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+</body>
+</html>
